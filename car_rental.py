@@ -4,11 +4,6 @@ class Vehicle:
         self.model = model
         self.year = year
         self.__rental_price_per_day = rental_price_per_day
-    # def display_info(self):
-    #     if isinstance(self, Car):
-    #         print(f"Car: {self.brand} {self.model}, Year: {self.year}, Seats: {self.seating_capacity}, Rental Price: ${self.get_rental_price()}/day")
-    #     elif isinstance(self, Bike):
-    #         print(f"Bike: {self.brand} {self.model}, Year: {self.year}, Engine: {self.engine_capacity}cc, Rental Price:${self.get_rental_price()}/day")
     def calculate_rental_cost(self, days):
         print(f"Rental cost for {self.brand} {self.model} for {days} days: ${self.__rental_price_per_day * days}")
     def get_rental_price(self):
